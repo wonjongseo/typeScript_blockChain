@@ -1,0 +1,14 @@
+// 타입스크립트가  어ㅓㄸㅎ게 자바스크립트러 변환하는지 알려주는 옵션
+
+{
+    "compilerOptions": {
+        "module": "commonjs", // nodejs를 평범하게 사용하고 다양한걸 임포트 또는 익스포트 할 수 있께 함
+        "target": "ES2015", //어떤 버전의 js 로 컴파일 되고 싶은지
+        "sourceMap": true,
+        "outDir": "dist" // ts-> js로 된거가 저장되는 경로
+    },
+    //어떤 파일이 컴파일 과정에서 포함되는지  typescript 에게 알려줄거임
+
+    "include": ["src/**/*"], //src에 있는 모든걸 컴파일 하겠따.
+    "exclude": ["node_modules"]
+}
